@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="akunDetailVM" type="com.hafizhsapplication.app.modules.akundetail.data.viewmodel.AkunDetailVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAkundetail"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+        <FrameLayout
+            android:id="@+id/frameStackdesaintanpaju"
+            android:layout_width="@dimen/_258pxh"
+            android:layout_height="275dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_12pxh">
+
+            <ImageView
+                android:id="@+id/imageDesaintanpaju"
+                imageRes="@{@drawable/img_desaintanpaju_236x258}"
+                android:layout_width="match_parent"
+                android:layout_height="249dp"
+                android:layout_gravity="top|start"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_desaintanpaju_236x258" />
+
+            <TextView
+                android:id="@+id/txtProfile"
+                style="@style/txtInterbold30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="@dimen/_75pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_75pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{akunDetailVM.akunDetailModel.txtProfile}"
+                tools:text="@string/lbl_profile" />
+        </FrameLayout>
+        <View
+            android:background="@drawable/rectangle_bg_gray_50_border_indigo_400_radius_12"
+            android:id="@+id/viewRectangle11220"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_43pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_27pxv" android:layout_width="@dimen/_337pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_gray_50_border_indigo_400_radius_12"
+            android:id="@+id/viewRectangle11225"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_43pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_337pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_gray_50_border_indigo_400_radius_12"
+            android:id="@+id/viewRectangle11226"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_43pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_337pxh"/>
+    </LinearLayout>
+</layout>

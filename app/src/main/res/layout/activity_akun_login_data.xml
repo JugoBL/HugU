@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="akunLoginDataVM" type="com.hafizhsapplication.app.modules.akunlogindata.data.viewmodel.AkunLoginDataVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearAkunloginda"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:id="@+id/txtAKUNMU"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_59pxv"
+            android:layout_width="wrap_content"
+            android:letterSpacing="0.1"
+            android:lineSpacingExtra="@dimen/_17pxh"
+            android:singleLine="true"
+            android:text="@{akunLoginDataVM.akunLoginDataModel.txtAKUNMU}"
+            style="@style/txtRoundedMplus1cBoldroundedmplus1cbold35" tools:text="@string/lbl_akunmu"/>
+
+        <FrameLayout
+            android:id="@+id/frameStackrectangle11220"
+            android:layout_width="@dimen/_337pxh"
+            android:layout_height="103dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_11pxh">
+
+            <View
+                android:id="@+id/viewRectangle11220"
+                android:layout_width="@dimen/_337pxh"
+                android:layout_height="@dimen/_43pxv"
+                android:layout_gravity="bottom|start"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:background="@drawable/rectangle_bg_gray_50_border_indigo_400_radius_12" />
+
+            <TextView
+                android:id="@+id/txtEMAIL"
+                style="@style/txtInterbold25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{akunLoginDataVM.akunLoginDataModel.txtEMAIL}"
+                tools:text="@string/lbl_email" />
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtPASSWORD"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_42pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{akunLoginDataVM.akunLoginDataModel.txtPASSWORD}"
+            style="@style/txtInterbold25" tools:text="@string/lbl_password"/>
+        <View
+            android:background="@drawable/rectangle_bg_gray_50_border_indigo_400_radius_12"
+            android:id="@+id/viewRectangle11225"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_43pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_337pxh"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogout"
+            style="@style/btnSolidRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_200pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="@dimen/_25pxh"
+            android:paddingTop="@dimen/_5pxv"
+            android:paddingEnd="@dimen/_18pxh"
+            android:paddingBottom="@dimen/_5pxv"
+            android:singleLine="true"
+            android:text="@string/lbl_logout"
+            android:textAllCaps="false"
+            tools:text="@string/lbl_logout" />
+    </LinearLayout>
+</layout>

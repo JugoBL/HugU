@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="akunVM" type="com.hafizhsapplication.app.modules.akun.data.viewmodel.AkunVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAkun"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+        <FrameLayout
+            android:id="@+id/frameStackdesaintanpaju"
+            android:layout_width="@dimen/_258pxh"
+            android:layout_height="284dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_marginEnd="@dimen/_12pxh">
+
+            <ImageView
+                android:id="@+id/imageDesaintanpaju"
+                imageRes="@{@drawable/img_desaintanpaju_236x258}"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_236pxh"
+                android:layout_gravity="start"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_desaintanpaju_236x258" />
+
+            <TextView
+                android:id="@+id/txtHUGU"
+                style="@style/txtRoundedMplus1cBoldroundedmplus1cbold35"
+                android:layout_width="163dp"
+                android:layout_height="63dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginStart="@dimen/_70pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_70pxh"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:ellipsize="end"
+                android:letterSpacing="0.1"
+                android:lineSpacingExtra="@dimen/_17pxh"
+                android:singleLine="true"
+                android:text="@{akunVM.akunModel.txtHUGU}"
+                tools:text="@string/lbl_hug_u" />
+        </FrameLayout>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtGroupThree"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_49pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_27pxv"
+            android:paddingTop="@dimen/_26pxv" android:singleLine="true"
+            android:text="@{akunVM.akunModel.txtGroupThree}"
+            style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_akunmu"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtGroupTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_27pxv"
+            android:paddingTop="@dimen/_26pxv" android:singleLine="true"
+            android:text="@{akunVM.akunModel.txtGroupTwo}"
+            style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_profilmu"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogout"
+            style="@style/btnSolidRounded"
+            android:layout_width="177dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_60pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="@dimen/_25pxh"
+            android:paddingTop="@dimen/_5pxv"
+            android:paddingEnd="@dimen/_18pxh"
+            android:paddingBottom="@dimen/_5pxv"
+            android:singleLine="true"
+            android:text="@string/lbl_logout"
+            android:textAllCaps="false"
+            tools:text="@string/lbl_logout" />
+    </LinearLayout>
+</layout>
